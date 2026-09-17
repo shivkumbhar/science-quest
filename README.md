@@ -1,0 +1,23 @@
+# Orbit Lab
+
+A static, dependency-free Year 7 science study app. Open `index.html` locally or publish this folder on GitHub Pages. Lessons, experiments, and questions are original educational material organised around the [official ICAS Year 7 Science areas](https://www.icasassessments.com/icas-year-7-test/) and [ICAS Science skills](https://www.icasassessments.com/products-icas/subjects/science/). It is an independent study aid, not an official ICAS product or a promise of exact test coverage.
+
+## GitHub Pages
+
+Push the repository to GitHub on the `main` branch. In **Settings → Pages**, set **Source** to **GitHub Actions**. The included workflow at the repository root deploys the `science-quest` folder. It supports any repository name because all asset paths are relative.
+
+Progress is stored in the browser's `localStorage`, so it stays on the same browser/device. Use the export button in the app to save a JSON backup.
+
+The colour palette is inspired by *Possum Magic* by Mem Fox — the most iconic Australian picture book — using warm Uluru terracotta, eucalyptus green, golden wattle amber and a deep native rose as the four knowledge-area colours, on a warm dark-brown "outback night" background instead of a cooler generic dark theme. Water-specific visuals (the water-cycle ocean, the Sun–Earth globe) keep a billabong blue so they still read correctly.
+
+Interactive labs use dependency-free CSS 3D models. On pointer and touch devices, drag a simulation to rotate its camera. Reduced-motion browser settings disable continuous decorative motion.
+
+Four labs go beyond a static model to directly rehearse a problem-solving skill: the water cycle lab loops a live evaporation/condensation/precipitation animation keyed to a stage slider; the chemical-reactions lab animates reactant atoms rearranging into products on a "React →" click and reports the conserved mass; the biological-investigation lab drops randomly placed quadrats onto a scattered field and builds a running mean and population estimate with each click, mirroring real random-sampling practice; and the motion lab renders a live SVG velocity–time graph whose shaded area — and a matching distance readout — grows as the time slider moves, making "area under the graph = distance" tangible instead of abstract.
+
+The curriculum contains 24 missions (six per ICAS knowledge area — Earth & beyond, Materials & matter, Life & living, Energy & change) and 144 original questions. Each mission ends with a six-question Paper E-style sequence using calculations, measurements, experimental evidence or scientific stimulus data. Later questions target recurring patterns found in public preparation material and the publicly visible preview of the 2016 Paper E upload, with transparent likelihood labels. Correct answers include worked reasoning, and incorrect answers can be retried. No protected question is reproduced.
+
+Topic coverage was cross-checked against the official ICAS Science Assessment Framework (Paper E) and broader Year 7 Australian curriculum breadth, adding missions on the water cycle & weather, chemical reactions & conservation of mass, body systems beyond circulation (digestion and nervous coordination), and renewable vs non-renewable energy — the last of which ICAS's own Year 7 test page names directly as an example topic.
+
+Direct copies of 2019+ ICAS Science past papers are commercially paywalled and were not available to reference. Instead, each mission's final question was modelled on the officially published ICAS Science Assessment Framework's higher (Paper F/G) tiers — the "next step up" content ICAS's own marketing already blends into the Year 7 test description — covering patterns such as heating/cooling-curve graphs, random sampling methods, potential↔kinetic energy conversion, projectile-path photographs, mixture-vs-compound particle diagrams and the effect of current on the human body. These feed into the Challenge Forecast paper alongside the existing forecast questions, widening its pool from 48 to 72 candidate questions.
+
+Practice Exam mode offers four 40-question, 60-minute papers: a balanced mission paper, a data-and-experiment paper, a harder forecast-pattern paper, and a skill-sweep paper that draws evenly across all five ICAS skill areas (observing/measuring, interpreting, predicting/concluding, investigating, reasoning/problem solving). Questions and answer choices are shuffled. Students can navigate freely, submit early, see scores for each knowledge area and review worked explanations for missed questions.
