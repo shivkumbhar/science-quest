@@ -6,7 +6,9 @@ A static, dependency-free Year 7 science study app. Open `index.html` locally or
 
 Push the repository to GitHub on the `main` branch. In **Settings → Pages**, set **Source** to **GitHub Actions**. The included workflow at the repository root deploys the `science-quest` folder. It supports any repository name because all asset paths are relative.
 
-Progress is stored in the browser's `localStorage`, so it stays on the same browser/device. Use the export button in the app to save a JSON backup. The **My progress** page also has a two-step "Clear everything & start again" button that wipes completed missions, quiz results and any exam in progress from the device.
+Progress is stored in the browser's `localStorage`, so it stays on the same browser/device. Use the export button in the app to save a JSON backup (it includes exam history). The **My progress** page also has a two-step "Clear everything & start again" button that wipes completed missions, quiz results, exam history and any exam in progress from the device.
+
+A practice exam in progress is saved as you go, so a page refresh or closed tab does not lose it: the app reopens on the same question with your answers and the same shuffled options. The clock is real elapsed time, as in a real timed exam, so it keeps running while the page is closed; if the 60 minutes pass while you are away, the exam is submitted automatically the next time you open the app. Finished results also survive a refresh, and the last 20 attempts (paper, score, time) are listed on **My progress**. Saved exams are validated on load, and anything corrupt or from an incompatible version is discarded rather than breaking the app.
 
 The colour palette is inspired by *Possum Magic* by Mem Fox — the most iconic Australian picture book — using warm Uluru terracotta, eucalyptus green, golden wattle amber and a deep native rose as the four knowledge-area colours, on a warm dark-brown "outback night" background instead of a cooler generic dark theme. Water-specific visuals (the water-cycle ocean, the Sun–Earth globe) keep a billabong blue so they still read correctly.
 
